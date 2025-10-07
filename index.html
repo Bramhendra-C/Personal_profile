@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bramhendra's Portfolio</title>
+    <link rel="stylesheet" href="details.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="details.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #4f8cff 60%, #6ee7b7 100%);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #4f8cff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #2563eb;
+        }
+        #hero {
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+            background: linear-gradient(90deg, #2563eb 60%, #f0fff4 100%);
+        }
+        #hero h2 span {
+            color: #4f8cff;
+            font-weight: bold;
+        }
+        .hero-buttons a button {
+            margin: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            background: #4f8cff;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.1);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .hero-buttons a button:hover {
+            background: #2563eb;
+            transform: translateY(-2px) scale(1.05);
+        }
+        #about, #projects, #certificates, #achievements, #contact {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            padding: 2rem;
+        }
+        .project-card, .certificate-card {
+            background: #f4f6fb;
+            border-radius: 12px;
+            margin: 1rem 0;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 1px 6px rgba(79,140,255,0.07);
+            text-align: center;
+        }
+        .project-card h3, .certificate-card h3 {
+            color: #4f8cff;
+        }
+        .project-card a, .certificate-card a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+        .project-card a:hover, .certificate-card a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            margin: 2rem auto;
+            padding: 0.7rem 2rem;
+            background: #6ee7b7;
+            color: #222;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(110,231,183,0.1);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn:hover {
+            background: #34d399;
+            transform: scale(1.05);
+        }
+        .social-links a {
+            margin: 0 0.5rem;
+            color: #4f8cff;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+        .social-links a:hover {
+            color: #2563eb;
+        }
+        img.profile-img {
+            border-radius: 50%;
+            width: 220px;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 4px 24px rgba(79,140,255,0.13);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #e0e7ff;
+            color: #222;
+            margin-top: 2rem;
+            border-top: 1px solid #dbeafe;
+        }
+        @media (max-width: 700px) {
+            #about, #projects, #certificates, #achievements, #contact {
+                padding: 1rem;
+            }
+            img.profile-img {
+                width: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Cherukumudi Bramhendra</h1>
+        <p style="font-size:1.1rem; font-weight:400;">AI & Software Engineer | Lifelong Learner</p>
+    </header>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="hero" >
+        <h2 >Hi, I'm <span>Cherukumudi Bramhendra</span></h2>
+        <p>Welcome to my digital portfolio! I am a passionate software engineer dedicated to crafting innovative, impactful solutions. Dive in to discover my projects, skills, and journey in the world of technology.</p>
+        <div class="hero-buttons">
+            <a href="#about"><button>Discover More</button></a>
+            <a href="#projects"><button>Explore Projects</button></a>
+            <a href="#contact"><button>Connect with Me</button></a>
+        </div>
+    </section>
+    <img src="https://res.cloudinary.com/dqea9q29p/image/upload/c_crop,g_auto,h_1000,w_1000/egpqcxplqbjpsvzx3ugq" alt="Bramhendra Image" class="profile-img">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Driven AI & Software Engineer with expertise in Java, Python, and cutting-edge web technologies. Proficient in NLP, computer vision, and seamless API integration, I have engineered intelligent assistants and scalable full-stack applications. My passion lies in building transformative, AI-powered solutions through creative problem-solving and lifelong learning.
+            <br><br>
+            <strong>Skills:</strong> Java, Python, HTML, CSS, JavaScript, React, Node.js, MongoDB, OpenCV, REST APIs, Azure AI, Git.
+            <br><br>
+            <strong>Interests:</strong> Artificial Intelligence, Data Structures, Machine Learning, Web Development, Competitive Programming.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/Bramhendra-C" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/Bramhendra1" target="_blank" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+            <a href="mailto:bramhendranaiduc@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/bramhendra-cherukumudi-29b336338" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p><strong>Education:</strong><br>
+         B.Tech – Computer Science & Technology<br>Madanapalle Institute of Technology & Science, AP (2023 – 2027), CGPA: 7.8<br>
+        Intermediate – 88%<br>SSC – GPA: 9.2</p>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Face Recognition System</h3>
+            <p>A real-time computer vision project that detects whether a user is focused (face visible) or unfocused (face not detected) using a webcam. It provides live visual feedback with green/red borders and counts how many times the user loses focus.</p>
+            <a href="https://github.com/Bramhendra-C/Face-Recognization" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Emotion Detection Using AI</h3>
+            <p>Engineered a dynamic emotion detection system utilizing Python and Azure Face API. Processes webcam input for instant emotion analysis using advanced computer vision and RESTful APIs.</p>
+            <a href="https://github.com/Bramhendra-C/emotion-detector-webcam" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Multi-Mode AI Personal Assistant (Voice / Text / Face Detection)</h3>
+            <ul>
+                <li>Designed a versatile Python assistant integrating voice commands, chatbot interactions, and real-time face detection with OpenCV.</li>
+                <li>Supports voice-activated Wikipedia/Google search, YouTube controls, jokes, fun facts, quotes, weather updates (OpenWeatherMap API), and seamless mode switching using pyttsx3, SpeechRecognition, pyjokes, and requests.</li>
+                <li>Offers intuitive switching between modes for a smooth, user-friendly experience.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python, OpenCV, pyttsx3, SpeechRecognition, pyjokes, requests</p>
+            <a href="https://github.com/Bramhendra-C/multi-mode-AI-Computer-Vision-assistant-nature" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-card">
+            <h3>AI Azure Internship</h3>
+            <h4><b>Microsoft – Edunet Foundation (in collaboration with AICTE)</b><br><b>Duration:</b> 13th May 2025 – 13th June 2025</h4> 
+            <ul>
+                <li>Completed an intensive 4-week internship specializing in Artificial Intelligence with Microsoft Azure services.</li>
+                <li>Acquired hands-on expertise in Azure AI tools and cloud-based machine learning deployment.</li>
+                <li>Implemented real-world AI projects under expert mentorship, including live AI applications.</li>
+                <li>Internship facilitated by Edunet Foundation and endorsed by AICTE.</li>
+            </ul>
+        </div>
+        <div class="certificate-card">
+            <h3>Java Programming Internship – CodTech IT Solutions</h3>
+            <p>One-month immersive internship focused on advanced Java programming and software engineering best practices.</p>
+        </div>
+        <div class="certificate-card">
+            <h3>Web Development Internship – See Caller</h3>
+            <p>Hands-on experience in web design, HTML/CSS/JS, and modern frontend development techniques.</p>
+        </div>
+        <div class="certificate-card">
+            <h3>Full Stack Web Development – GeeksforGeeks</h3>
+            <p>Comprehensive certification in full stack web development, covering React, Node.js, Express, and MongoDB.</p>
+        </div>
+        <div class="certificate-card">
+            <h3>Python Programming – GeeksforGeeks</h3>
+            <p>Mastered core Python concepts, data structures, OOP, and real-world project implementation.</p>
+        </div>
+        <div class="certificate-card">
+            <h3>Programming using Java – Infosys Springboard</h3>
+            <p>In-depth training in OOP, exception handling, file I/O, and practical coding challenges.</p>
+        </div>
+        <div class="certificate-card">
+            <h3>Generative AI Fundamentals – Simplilearn</h3>
+            <p>Explored the essentials of generative AI, foundational models, and transformative use cases.</p>
+        </div>
+    </section>
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Champion of a college-level hackathon with an innovative real-time face recognition solution.</li>
+            <li>Ranked among the top 10% on LeetCode for exceptional problem-solving abilities.</li>
+            <li>Active contributor to open-source projects, driving collaborative software innovation.</li>    
+        </ul>
+        <p><strong>Hobbies:</strong> Cricket enthusiast, music lover, and avid explorer of emerging technologies.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="mailto:bramhendranaiduc@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/bramhendra-cherukumudi-29b336338" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="Bramhendra_resume.docx" download class="btn"><i class="fa-solid fa-download"></i> Download My Resume</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Cherukumudi Bramhendra</p>
+    </footer>
+</body>
+</html>
